@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div id="post-container">
+	<h3>{{ page.title }}</h3>
+	<ul class="fa-ul">
+	{% for post in site.tags[page.tag] %}
+	    <li><i class="fa-li fa fa-link"></i><h4>{{ post.date | date_to_html_string }}: <a href="{{ post.url }}">{{ post.title }}</a></h4></li>
+	{% endfor %}
+	</ul>
+</div>

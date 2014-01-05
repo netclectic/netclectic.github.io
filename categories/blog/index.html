@@ -7,10 +7,12 @@
   <title>netclectic.com - Category: blog</title>
   <link rel="shortcut icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/popup.css" type="text/css" />
   <link rel="stylesheet" href="/css/reset.css" type="text/css" />
   <link rel="stylesheet" href="/css/site.css" type="text/css" />
   <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js" type='text/javascript'></script>
+  <script src="/js/jquery.popup.min.js" type="text/javascript"></script>
   <script src="/js/rss.js" type='text/javascript'></script>
 </head>
 <body>
@@ -55,6 +57,28 @@
 
   
 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
 
 
   </ul>
@@ -66,6 +90,8 @@
 	<ul class="fa-ul">
 	
 	    <li><i class="fa-li fa fa-link"></i><h4><span class="month">JAN</span> <span class="day">26</span> <span class="year">2012</span> : <a href="/blog/2012/01/26/who-are-you/">Who are you?</a></h4></li>
+	
+	    <li><i class="fa-li fa fa-link"></i><h4><span class="month">NOV</span> <span class="day">30</span> <span class="year">2011</span> : <a href="/website/blog/2011/11/30/return-of-the-net/">The return of the net</a></h4></li>
 	
 	</ul>
 </div>
@@ -83,11 +109,14 @@
 
 <script>
 	$(window).load(function(){
-		$("#rss-Pics").rss("http://api.flickr.com/services/feeds/groups_pool.gne?id=2436685@N25&lang=en-us&format=rss_200", {
+		$("#rss-Pics").rss("http://photos.googleapis.com/data/feed/api/user/103620554669296704265/albumid/5965511071614249361?alt=rss", {
 		    limit: 5,
 		    layoutTemplate: '<ul class="horizontal" id="site-image-feed-entries">{entries}</ul>',
-		    entryTemplate: '<li><a href="{url}"><img src="{teaserImageUrl_small}" alt="{title}"/></a></li>'
+		    entryTemplate: '<li><a href="{gplus_url}" class="popup"><img src="{gplus_teaserImageUrl}" alt="{title}"/></a></li>'
 		}).show();
+
+		var options = {};
+		$('a.popup').popup(options);
 	});
 </script>
   </div>
@@ -99,9 +128,9 @@
 		
 		<li><a href="/categories/website">website</a></li>
 		
-		<li><a href="/categories/cycling">cycling</a></li>
-		
 		<li><a href="/categories/blog">blog</a></li>
+		
+		<li><a href="/categories/cycling">cycling</a></li>
 		
 	</ul>
 </div>
@@ -115,9 +144,9 @@
 	    
 	      <li><a href="/cycling/2011/12/05/the-grim-reaper/">The Grim Reaper</a></li>
 	    
-	      <li><a href="/cycling/2011/12/01/bealach-mor/">Beakach Mor</a></li>
+	      <li><a href="/cycling/2011/12/01/bealach-mor/">Bealach Mor</a></li>
 	    
-	      <li><a href="/website/2011/11/30/return-of-the-net/">The return of the net</a></li>
+	      <li><a href="/website/blog/2011/11/30/return-of-the-net/">The return of the net</a></li>
 	    
   	</ul>
 </div>

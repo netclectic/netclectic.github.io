@@ -2,7 +2,7 @@
 layout: post
 title: Bealach Mor
 category: cycling
-tags: bealach cyclography
+tags: bealach cyclography cycling
 published: true
 ---
 
