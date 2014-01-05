@@ -4,3 +4,4 @@ pygments: true
 permalink: pretty
 paginate: 10
 paginate_path: /page:num
+category_dir : categories
