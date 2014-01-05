@@ -218,7 +218,12 @@
         catch(e) { return "" }
       })(entry),
 
-      teaserImageUrl_small: (function(entry) {
+      gplus_url: (function(entry) {
+        try { return entry.mediaGroups[0].contents[0].url; }
+        catch(e) { return "" }
+      })(entry),
+
+      gplus_teaserImageUrl: (function(entry) {
         try { return entry.mediaGroups[0].contents[0].thumbnails[0].url; }
         catch(e) { return "" }
       })(entry)

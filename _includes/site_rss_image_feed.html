@@ -9,7 +9,10 @@
 		$("#rss-{{feed_title}}").rss("{{feed}}", {
 		    limit: 5,
 		    layoutTemplate: '<ul class="horizontal" id="site-image-feed-entries">{entries}</ul>',
-		    entryTemplate: '<li><a href="{url}"><img src="{teaserImageUrl_small}" alt="{title}"/></a></li>'
+		    entryTemplate: '<li><a href="{gplus_url}" class="popup"><img src="{gplus_teaserImageUrl}" alt="{title}"/></a></li>'
 		}).show();
+
+		var options = {};
+		$('a.popup').popup(options);
 	});
 </script>
