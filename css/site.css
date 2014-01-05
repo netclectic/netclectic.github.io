@@ -1,0 +1,185 @@
+body {
+	background-color: #e1ddd9;
+	font-size: 13px;
+	font-family: Arial, SunSans-Regular, Sans-Serif;
+	color:#564b47;  
+	padding:0;
+	margin:0;
+}
+
+a i
+{
+	color: #000;
+}
+
+a { 
+	text-decoration: none; 
+}
+ 
+
+h1 a,
+h1 {
+	font-size: 16px;
+	text-transform:uppercase;
+	color: #564b47;
+	background-color: #90897a;
+	padding:5px 15px;
+	margin:0px
+}
+
+h2 {
+	font-size:16px;
+	padding-top:10px;
+	text-transform:uppercase;
+	color: #564b47;
+	background-color: transparent;
+}
+
+.logo { margin: 20px 0; }
+
+p, h2, pre {
+	margin: 0; 
+	padding: 5px 20px; 
+}
+
+div {
+	display: block;
+}
+
+blockquote {
+	font-style: italic;
+	margin: 0 30px 1.7em;
+}
+
+#disqus_thread {
+	width: 95%;
+	margin-left:auto;
+	margin-right:auto;
+	clear: both;
+}
+
+.post {
+	width: 100%;
+}
+
+
+.post-content,
+.post-excerpt {
+	width: 75%;
+	float: left;
+}
+
+.post-aside {
+	width: 18%;
+	float: left;
+}
+
+.post-aside-share {
+	width: 5%;
+	float: left;
+}
+
+.pagination {
+	width: 100%;
+	clear: both;
+}
+
+#header {
+	width: 100%;
+	border-bottom: 1px solid #000000;
+}
+
+#footer {
+	clear: both;
+	width: 100%;
+	border: 0;
+	padding: 50px 0;
+	text-align: center;
+}
+
+#content {
+	float: left;
+	border: 1px solid #564b47;
+	background-color: #ffffff;
+	width: 66%;
+}
+
+#topnav {
+	width: 100%;
+	border: 0;
+}
+
+ul.pages,
+#topnav ul {
+	list-style: none;
+}
+
+li.page, li.previous, li.next,
+#topnav li {
+	padding: 5px 10px 5px 10px;
+	display: inline;
+}
+
+#sidenav ul {
+	list-style: square;
+	padding-left: 15px;
+}
+
+#sidenav ul.fa-ul{
+	list-style: none;
+	padding-left: 0px;
+}
+
+#sidenav li i,
+#sidenav li {
+	padding: 3px 0;
+}
+
+#sidenav li.active,
+#topnav li.active{
+	background-color: #000;
+}
+
+#sidenav li a,
+#topnav li a {
+	color: #000;
+}
+
+#sidenav li a.active,
+#topnav li a.active {
+	color: #ccc;
+}
+
+#sidenav li:hover,
+#topnav li:hover {
+	background-color: #000;
+}
+
+#sidenav li:hover > a,
+#topnav li:hover > a {
+	color: #ccc;
+}
+
+#sidenav {
+	float: left;
+	width: 30%;
+	margin-left: 2%;
+}
+
+#sidenav-wide {
+	border-top: 1px solid #000000;
+	width: 100%;
+}
+
+#sidenav-left {
+	float: left;
+	border-top: 1px solid #000000;
+	width: 47%;
+}
+
+#sidenav-right {
+	float: left;
+	border-top: 1px solid #000000;
+	width: 47%;
+	margin-left: 6%;
+}

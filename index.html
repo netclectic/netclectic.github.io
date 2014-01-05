@@ -1,9 +1,33 @@
-<html>
-<head>
-	<title>netclectic.com</title>
-</head>
-<body>
-	<h1>netclectic.com</h1>
-	<h2>Bringing you window licking gooodness since 1997!</h2>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+<div id="post-container">
+{% for post in paginator.posts %}
+  <div class="post">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+    <div class="post-excerpt">
+      {{ post.excerpt }}
+      <p><a href="{{ post.url }}">Read more</a></p>
+    </div>
+
+    <div class="post-aside">      
+      {% include post_aside_tags.html %}
+    </div>
+
+  </div>
+{% endfor %}
+</div>
+
+{% include paginator.html %}
+
+<script type="text/javascript">
+  var disqus_shortname = 'netclectic';
+  (function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>

@@ -1,0 +1,15 @@
+<div id="site-feed">
+	<h1>{{feed_title}}</h1>
+
+	<div id="rss-{{feed_title}}" style="display:none;"></div>
+</div>
+
+<script>
+	$(window).load(function(){
+		$("#rss-{{feed_title}}").rss("{{feed}}", {
+		    limit: 5,
+		    layoutTemplate: '<ul class="fa-ul">{entries}</ul>',
+		    entryTemplate: '<li><i class="fa-li fa {{feed_class}}"></i><a href="{url}">{title}</a></li>'
+		}).show();
+	});
+</script>
