@@ -229,3 +229,35 @@ li.page, li.previous, li.next,
 .clear {
 	clear: both;
 }
+
+.fa-twitter {
+	color: #4099FF;
+}
+
+.fa-facebook {
+	color: #3B5998;
+}
+
+.fa-google-plus {
+	color: #dd1812;
+}
+
+.fa-youtube {
+	color: #bb0000;
+}
+
+.fa-linkedin {
+	color: #0e76a8;
+}
+
+.fa-flickr {
+	color: #0063dc;
+}
+
+.fa-foursqaure {
+	color: #0072b1;
+}
+
+.fa-github {
+	color: #171515;
+}
