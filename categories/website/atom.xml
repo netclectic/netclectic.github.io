@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: website | ]]></title>
+  <link href="/categories/website/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2014-01-05T20:17:26+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Moved to Jekyll on GitHub Pages]]></title>
+    <link href="/website/2014/01/04/moved-to-jekyll-on-github-pages/"/>
+    <updated>2014-01-04T00:00:00+00:00</updated>
+    <id>/website/2014/01/04/moved-to-jekyll-on-github-pages</id>
+    <content type="html"><![CDATA[<p>Finally started playing with Jekyll and GitHub Pages</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The return of the net]]></title>
+    <link href="/website/2011/11/30/return-of-the-net/"/>
+    <updated>2011-11-30T00:00:00+00:00</updated>
+    <id>/website/2011/11/30/return-of-the-net</id>
+    <content type="html"><![CDATA[<p>Well after a couple of years hiatus I’ve finally got round to putting something back up at netclectic.com. I’m not sure where it’s going to go just yet but I’m working on it, hopefully it will evolve in to something resembling a website in the coming months.</p>
+
+<p>It feels good to be back :-)</p>]]></content>
+  </entry>
+  
+</feed>

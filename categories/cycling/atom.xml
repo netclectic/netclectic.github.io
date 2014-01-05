@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cycling | ]]></title>
+  <link href="/categories/cycling/atom.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2014-01-05T20:17:26+00:00</updated>
+  <id>/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="https://github.com/recurser/jekyll-plugins">Recurser</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Grim Reaper]]></title>
+    <link href="/cycling/2011/12/05/the-grim-reaper/"/>
+    <updated>2011-12-05T00:00:00+00:00</updated>
+    <id>/cycling/2011/12/05/the-grim-reaper</id>
+    <content type="html"><![CDATA[<p>This makes pretty grim reading - Every death on every road in Great Britain 1999-2010.</p>
+
+<p>It would seem if you’re a cyclist and you want to stay alive then you should avoid riding during the Monday to Friday rush hours and not bother heading out on a Saturday or Sunday afternoon.</p>
+
+<p>Strangely, looking at the map of bike casualties in the Glasgow area, most of them seem to occur in fine weather during daylight. There also seems to be a disproportionate number of old men (60+) involved.</p>
+
+<p>If the map is accurate and to be believed it looks like one guy died while cycling along the M74.</p>
+
+<p>Thankfully though, the general trend for the number of cyclists being killed on the roads between 1999 - 2010 seems to heading downwards. This has got to be a good thing considering the number of cyclists on the road during that time has most definitely been on the rise.</p>
+
+<p>Don’t let the doom mongers put you off and get out and ride!</p>]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Beakach Mor]]></title>
+    <link href="/cycling/2011/12/01/bealach-mor/"/>
+    <updated>2011-12-01T00:00:00+00:00</updated>
+    <id>/cycling/2011/12/01/bealach-mor</id>
+    <content type="html"><![CDATA[<p>Just signed up for the Bealach Mor (140km, 3000m ascent) and the Ullapool Sportive. Help ma’ boab!!!</p>
+
+<p>Two more sportives to add to the ever growing list along with the New Forest Spring Sportive, Etape Caledonia, the Wight Ferry Sportive and the Glasgow 100.</p>
+
+<p>It’s going to be a busy 2012!!!</p>
+
+<p>Full details on the cycleography calendar here</p>]]></content>
+  </entry>
+  
+</feed>
