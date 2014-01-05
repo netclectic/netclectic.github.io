@@ -1,9 +1,11 @@
 ---
 layout: post
-title: Beakach Mor
+title: Bealach Mor
 category: cycling
 tags: bealach cyclography
+published: true
 ---
+
 Just signed up for the Bealach Mor (140km, 3000m ascent) and the Ullapool Sportive. Help ma' boab!!!
 
 Two more sportives to add to the ever growing list along with the New Forest Spring Sportive, Etape Caledonia, the Wight Ferry Sportive and the Glasgow 100.
