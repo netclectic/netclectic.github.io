@@ -219,7 +219,7 @@
       })(entry),
 
       teaserImageUrl_small: (function(entry) {
-        try { return entry.content.match(/(<img.*?>)/gi)[0].match(/src="(.*?)"/)[1].replace('_m.jpg', '_s.jpg') }
+        try { return entry.mediaGroups[0].contents[0].thumbnails[0].url; }
         catch(e) { return "" }
       })(entry)
     }, this.options.tokens)
