@@ -12,4 +12,4 @@ Two more sportives to add to the ever growing list along with the New Forest Spr
 
 It's going to be a busy 2012!!!
 
-Full details on the cycleography calendar here...
+Full details on the cycleography calendar here - <http://www.cycleography.com/calendar-2/>

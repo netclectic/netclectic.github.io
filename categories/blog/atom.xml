@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | ]]></title>
   <link href="/categories/blog/atom.xml" rel="self"/>
   <link href="/"/>
-  <updated>2014-01-05T23:37:24+00:00</updated>
+  <updated>2014-01-06T00:26:15+00:00</updated>
   <id>/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -24,19 +24,16 @@
 
 <p>Google says:</p>
 
-<p>Many websites, such as news sites and blogs, partner with us to show ads to their visitors. To see ads that are more related to you and your interests, edit the categories below, which are based on sites you have recently visited.</p>
+<blockquote>
+<p>Many websites, such as news sites and blogs, partner with us to show ads to their visitors. To see ads that are more related to you and your interests, edit the categories below, which are based on sites you have recently visited. Your interests are associated with an advertising cookie that’s stored in your browser.</p>
+</blockquote>
 
-<p>Your interests are associated with an advertising cookie that’s stored in your browser.</p>
-
-<p>So who does google think you are? You can find out here - https://www.google.com/settings/ads/onweb</p>
+<p>So who does google think you are? You can find out here - <a href="https://www.google.com/settings/ads/onweb">https://www.google.com/settings/ads/onweb</a></p>
 
 <p>This is who google thinks I am</p>
 
 <blockquote>
-<p>Your categories</p>
-</blockquote>
-
-<p>Below you can review the interests and inferred demographics that Google has associated with your cookie.</p>
+<p>Your categories Below you can review the interests and inferred demographics that Google has associated with your cookie.</p>
 
 <ul>
 <li>Arts &amp; Entertainment</li>
@@ -59,18 +56,17 @@
 
 <li>World Localities - Europe - Western Europe - United Kingdom - Scotland</li>
 </ul>
-
-<blockquote>
-<p>Your demographics</p>
 </blockquote>
 
-<p>We infer your age and gender based on the websites you’ve visited.</p>
+<blockquote>
+<p>Your demographics We infer your age and gender based on the websites you’ve visited.</p>
 
 <ul>
 <li>Age: 35-44</li>
 
 <li>Gender: Male</li>
 </ul>
+</blockquote>
 
 <p>Scary that it’s pretty much spot on? Or sad that I’m so predictable?</p>
 

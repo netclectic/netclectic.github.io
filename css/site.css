@@ -68,6 +68,10 @@ li {
 	padding: 2px 0;
 }
 
+.post li {
+	padding-left: 15px;
+}
+
 div {
 	display: block;
 }
@@ -101,12 +105,12 @@ blockquote {
 
 .post-aside {
 	padding-top: 5px;
-	width: 18%;
+	width: 190px;
 	float: left;
 }
 
 .post-aside-share {
-	width: 5%;
+	width: 40px;
 	float: left;
 }
 
@@ -276,4 +280,11 @@ li.page, li.previous, li.next,
 
 .last-fm {
 	color: #c3000d;
+}
+
+.post-aside ul.fa-ul {
+	margin-left: 5px;
+}
+.post-aside ul.fa-ul li {
+	padding-left: 5px;
 }
