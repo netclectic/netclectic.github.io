@@ -24,7 +24,7 @@
 
 <div id="topnav">
   <ul>
-    {% assign pages_list = site.pages %}
+    {% assign pages_list = site.pages | sort:"path" %}
     {% assign group = 'navigation' %}
     {% include topnav.html %}
   </ul>
