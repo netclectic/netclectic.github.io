@@ -15,8 +15,15 @@ a i
 a { 
 	text-decoration: none; 
 }
- 
-h1 a, h2 a, h3 a, h4 a
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, 
+a:hover h1, a:hover h2, a:hover h3, a:hover h4,
+a:hover {
+	color: #c3000d;
+}
+
+h1 a,h2 a,h3 a,h4 a,
+a h1, a h2, a h3, a h4,
 h1, h2, h3, h4 {
 	color: #000;
 	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
@@ -88,30 +95,51 @@ blockquote {
 	clear: both;
 }
 
-#post-container {
+.post-container {
 	background-color: #ffffff;
 	border: 1px solid #564b47;
+	width: 100%;
+	position: relative;
+	min-height: 100px;
 }
 .post {
-	width: 100%;
+}
+
+.page-content {
+	padding: 5px 0;
+	border-left: 1px solid #564b47;
+	min-height: 105px;
+	float: left;
+	background-color: #ffffff;
 }
 
 .post-content,
 .post-excerpt {
-	width: 75%;
+	padding: 5px 0;
+	border-left: 1px solid #564b47;
+	margin-left: 230px;
+	margin-top: -105px;
+	min-height: 105px;
 	float: left;
-	padding-top: 5px;
+	background-color: #ffffff;
 }
 
 .post-aside {
-	padding-top: 5px;
 	width: 190px;
+	margin-left: 195;
+	margin-top: 5px;
+	height: 100px;
 	float: left;
+	background-color: #ffffff;
 }
 
 .post-aside-share {
 	width: 40px;
+	margin-left: 0px;
+	margin-top: 5px;
+	height: 100px;
 	float: left;
+	background-color: #ffffff;
 }
 
 .pagination {
@@ -240,6 +268,10 @@ li.page, li.previous, li.next,
 
 .clear {
 	clear: both;
+}
+.empty {
+	clear: both;
+	height: 0px;
 }
 
 .fa-twitter {

@@ -3,26 +3,23 @@ layout: default
 title: Home
 ---
 {% for post in paginator.posts %}
-<div id="post-container">
-  <div class="post">
+<div class="post-container">
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-    <div class="post-content">
-      {{ post.content }}
-    </div>
-
-    <div class="post-aside">      
-      {% include post_aside_tags.html %}
-    </div>
-
     <div class="post-aside-share">
       <p><a href="https://twitter.com/intent/tweet?url=http://www.netclectic.com{{ post.url }}&text={{ post.title }}&via=ademund" title="share on twitter"><i class="fa fa-twitter fa-lg"></i></a></p>
       <p><a href="https://facebook.com/sharer.php?u=http://www.netclectic.com{{ post.url }}"><i class="fa fa-facebook fa-lg" title="share on facebook"></i></a></p>
       <p><a href="https://plus.google.com/share?url=http://www.netclectic.com{{ post.url }}"><i class="fa fa-google-plus fa-lg" title="share on google+"></i></a></p>
     </div>    
 
-  </div>
-  <div class="clear">&nbsp;</div> 
+    <div class="post-aside">      
+      {% include post_aside_tags.html %}
+    </div>
+
+	<div class="empty"></div>
+    <div class="post-content">
+      {{ post.content }}
+    </div>	    
+	<div class="empty"></div>
 </div>
 <div class="clear">&nbsp;</div>  
 {% endfor %}
@@ -30,11 +27,33 @@ title: Home
 {% include paginator.html %}
 
 <script type="text/javascript">
-  var disqus_shortname = 'netclectic';
-  (function () {
-  var s = document.createElement('script'); s.async = true;
-  s.type = 'text/javascript';
-  s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-  }());
+	var disqus_shortname = 'netclectic';
+	(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	}());
+
+
+	/*
+	function updateColumnHeights() {
+		$('.post-container').each(function(i, el)
+		{
+			var max_height = $(this).height();
+			$(this).children().each(function(index, child) {
+				max_height = Math.max(max_height, $(child).height());
+			});
+			$(this).height(max_height + $(this).children().first().height());
+
+			$(this).children().each(function(index, child) {
+				if (($(child).nodeName) && ($(child).nodeName() != "H3")) {
+					$(child).height(max_height);
+				}
+			});
+		});
+	}
+	$(window).on('resize', function(){  updateColumnHeights(); });
+	$(document).ready(function(){ updateColumnHeights(); });
+	*/
 </script>
