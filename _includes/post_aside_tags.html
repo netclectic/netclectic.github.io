@@ -1,6 +1,8 @@
       <ul class="tags fa-ul">
         <li><i class="fa fa-clock-o"></i>&nbsp;<time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></li>
-        <li><i class="fa fa-comment"></i>&nbsp;<a href="#disqus_thread"></a></li>
+        {% if page.allow_comments != false %}
+        <li><i class="fa fa-comment"></i>&nbsp;<a href="#disqus_thread" data-disqus-identifier="{{post.id}}"></a></li>
+        {% endif %}
         <li><i class="fa fa-folder"></i>&nbsp;
     		{% for category in post.categories %}
 				<a href="/categories/{{category}}">{{category}}</a>

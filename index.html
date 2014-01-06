@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+allow_comments: true
 ---
 {% for post in paginator.posts %}
 <div class="post-container">
@@ -34,26 +35,4 @@ title: Home
 		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
 		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 	}());
-
-
-	/*
-	function updateColumnHeights() {
-		$('.post-container').each(function(i, el)
-		{
-			var max_height = $(this).height();
-			$(this).children().each(function(index, child) {
-				max_height = Math.max(max_height, $(child).height());
-			});
-			$(this).height(max_height + $(this).children().first().height());
-
-			$(this).children().each(function(index, child) {
-				if (($(child).nodeName) && ($(child).nodeName() != "H3")) {
-					$(child).height(max_height);
-				}
-			});
-		});
-	}
-	$(window).on('resize', function(){  updateColumnHeights(); });
-	$(document).ready(function(){ updateColumnHeights(); });
-	*/
 </script>
