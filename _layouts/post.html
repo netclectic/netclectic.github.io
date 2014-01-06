@@ -1,43 +1,43 @@
 ---
   layout: default
 ---
-<div id="post-container">
+<div class="post-container">
   <h3>{{ page.title }}</h3>
-
-  <div class="post">
-    <div class="post-content">
-      {{ content }}
-    </div>
-
-    <div class="post-aside">
-      {% assign post = page %}
-      {% include post_aside_tags.html %}
-    </div>
-
-    <div class="post-aside-share">
-      <p><a href="https://twitter.com/intent/tweet?url=http://www.netclectic.com{{ page.url }}&text={{ page.title }}&via=ademund" title="share on twitter"><i class="fa fa-twitter fa-lg"></i></a></p>
-      <p><a href="https://facebook.com/sharer.php?u=http://www.netclectic.com{{ page.url }}"><i class="fa fa-facebook fa-lg" title="share on facebook"></i></a></p>
-      <p><a href="https://plus.google.com/share?url=http://www.netclectic.com{{ page.url }}"><i class="fa fa-google-plus fa-lg" title="share on google+"></i></a></p>
-    </div>
-
+  <div class="post-aside-share">
+    <p><a href="https://twitter.com/intent/tweet?url=http://www.netclectic.com{{ page.url }}&text={{ page.title }}&via=ademund" title="share on twitter"><i class="fa fa-twitter fa-lg"></i></a></p>
+    <p><a href="https://facebook.com/sharer.php?u=http://www.netclectic.com{{ page.url }}"><i class="fa fa-facebook fa-lg" title="share on facebook"></i></a></p>
+    <p><a href="https://plus.google.com/share?url=http://www.netclectic.com{{ page.url }}"><i class="fa fa-google-plus fa-lg" title="share on google+"></i></a></p>
   </div>
-  <div class="clear">&nbsp;</div>
+
+  <div class="post-aside">
+    {% assign post = page %}
+    {% include post_aside_tags.html %}
+  </div>
+
+  <div class="empty"></div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="empty"></div>
 </div>
 
-<div id="post-container">
-    {% if page.allow_comments != false %}
-      <div id="disqus_thread" name="disqus_thread"></div>
-      <script type="text/javascript">
-          var disqus_shortname = 'netclectic';
-          (function() {
-              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    {% endif %}
+<div class="clear">&nbsp;</div>
+
+<div class="post-container">
+  <div class="clear">&nbsp;</div>
+  {% if page.allow_comments != false %}
+    <div id="disqus_thread" name="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'netclectic';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  {% endif %}
 </div>
 
 <script type="text/javascript">
