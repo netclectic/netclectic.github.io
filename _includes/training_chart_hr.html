@@ -1,0 +1,29 @@
+<div id="chart_hr" style="width: 500px; height: 500px;"></div>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Date', 'Heart Rate'],
+          ['2014-01-05',  60],
+          ['2014-01-06',  58],
+          ['2014-01-07',  70],
+          ['2014-01-08',  62],
+          ['2014-01-09',  60],
+          ['2014-01-10',  58],
+          ['2014-01-11',  70],
+          ['2014-01-12',  62],
+        ]);
+
+        var options = {
+          	title: 'Resting Heart Rate over Time',
+          	curveType: "function",
+			width: 500, height: 500,
+            vAxis: {maxValue: 100, minValue: 40}
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('chart_hr'));
+        chart.draw(data, options);
+      }
+</script>
