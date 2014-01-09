@@ -328,7 +328,10 @@ li.page, li.previous, li.next,
     .post-aside-share {
 		display: none;
     }
-	.post-container,
+	.post-container {
+		border-left: 0;
+		border-right: 0;
+	}
 	.post-content,
 	.post-excerpt {
 		margin: 0;
