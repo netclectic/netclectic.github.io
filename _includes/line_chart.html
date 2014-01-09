@@ -1,6 +1,11 @@
 <script type="text/javascript">
       function drawChart_{{ include.chart_name }}() {
-        var data = google.visualization.arrayToDataTable([ {% include {{include.chart_data}} %} ]);
+        var query = new google.visualization.Query({% include {{include.chart_data}} %});
+        query.send(handleChartQueryResponse_{{ include.chart_name }});
+      }
+
+      function handleChartQueryResponse_{{ include.chart_name }}(response) {
+        var data = response.getDataTable();
 
         var options = {
           title: '{{ include.chart_title }}',
