@@ -62,25 +62,42 @@ group: "navigation"
 {% include line_chart.html chart_name='chart_other_2' chart_title='More Stuff' chart_data='chart_other_2.data' chart_min=0 chart_max=200 %}
 
 <script type="text/javascript">
+	var id;
+	var isMax=false;
+
 	google.setOnLoadCallback(drawCharts);
+
+	function fixRowSizes() {
+		var headerHeight = 0;
+		var menuHeight = 0;
+		var contentWidth =	$('#content').outerWidth();
+		if (contentWidth < 768) {
+			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height('auto');
+		}
+		else
+		{
+			var contentHeight =	$('#content').outerHeight();
+			var h3Height = $('#content h3').outerHeight();
+			if (!isMax) {
+				headerHeight = $('#header').outerHeight();
+				menuHeight = $('#topnav').outerHeight();
+			}
+			var rowHeight = Math.floor((contentHeight-headerHeight-menuHeight-h3Height) / 3) -2;
+			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height(rowHeight);
+		}
+	}
+
 	function drawCharts() {
+		fixRowSizes();
+
 		drawChart_chart_hr();
 		drawChart_chart_weight();
 		drawChart_chart_other();
 		drawChart_chart_hr_2();
 		drawChart_chart_weight_2();
 		drawChart_chart_other_2();
-	}
-
-	var id;
-	$(window).resize(function() {
 	    clearTimeout(id);
-	    id = setTimeout(drawCharts, 100);	    
-	});
-</script>
-
-<script type="text/javascript">
-	var isMax=false;
+	}
 
 	$('#full_screen_content').click(function() {
 		if (!isMax) {
@@ -89,19 +106,27 @@ group: "navigation"
 	            'width': '100%',
 	            'height': '100%',
 	            'position' : 'absolute',
-	            'top' : '0',
-	            'left' : '0',
+	            'top' : '0px',
+	            'left' : '0px',
 	            'margin' : '0',
 	            'border' : '0'
 	        	});
-			$(".post-container").css('border', '0');
+			$(".post-container").css({
+				'border': '0',
+			});
 		}
 		else {
-			$("#content").css({'width':'','height':'','position':'','top':'','left':'','margin':'','border':''});
+			$("#content").css({'width':'','height':'','position':'','top':'','left':'','margin':'','border':'', 'bottom':'', 'right':''});
 			$("#sidenav").css('display', '');
-			$(".post-container").css('border', '');
+			$(".post-container").css({'border': ''});
 		}
 		isMax=!isMax;
-		drawCharts();
+		$('.full_screen_content').toggleClass( "full_screen", isMax );
+		$(window).resize();
+	})
+
+	$( window ).resize(function() {
+	    id = setTimeout(drawCharts, 100);
 	});
+
 </script>
