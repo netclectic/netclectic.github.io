@@ -7,7 +7,7 @@ group: "navigation"
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 
 <div class="full_screen_content">
-	<h3><i class="fa fa-align-justify" id="full_screen_content"></i></h3>
+	<h3><i class="fa fa-align-justify" id="full_screen_content" title="maximize"></i></h3>
 </div>
 
 <section class="dashboard pure-g-r clearfix">
@@ -114,11 +114,13 @@ group: "navigation"
 			$(".post-container").css({
 				'border': '0',
 			});
+			$('#full_screen_content').attr('title', 'minimize');
 		}
 		else {
 			$("#content").css({'width':'','height':'','position':'','top':'','left':'','margin':'','border':'', 'bottom':'', 'right':''});
 			$("#sidenav").css('display', '');
 			$(".post-container").css({'border': ''});
+			$('#full_screen_content').attr('title', 'maximize');
 		}
 		isMax=!isMax;
 		$('.full_screen_content').toggleClass( "full_screen", isMax );
