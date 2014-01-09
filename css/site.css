@@ -106,16 +106,16 @@ blockquote {
 }
 
 .page-content {
-	padding: 5px 0;
-	border-left: 1px solid #564b47;
+	padding: 0;
 	min-height: 105px;
 	float: left;
 	background-color: #ffffff;
+	width: 100%;
 }
 
 .post-content,
 .post-excerpt {
-	padding: 5px 0;
+	padding: 0;
 	border-left: 1px solid #564b47;
 	margin-left: 230px;
 	margin-top: -105px;
@@ -164,7 +164,7 @@ blockquote {
 #content {
 	float: left;
 	width: 66%;
-	padding-left: 10px;
+	margin-left: 1%;
 }
 
 #topnav {
@@ -226,8 +226,9 @@ li.page, li.previous, li.next,
 
 #sidenav {
 	float: left;
-	width: 30%;
-	margin-left: 20px;
+	width: 31%;
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 #sidenav > div#sidenav-wide {
@@ -239,6 +240,7 @@ li.page, li.previous, li.next,
 	float: left;
 	width: 48%;
 	border: 0;
+	min-width: 100px;
 }
 
 #sidenav > div > div {
@@ -319,4 +321,23 @@ li.page, li.previous, li.next,
 }
 .post-aside ul.fa-ul li {
 	padding-left: 5px;
+}
+
+@media only screen and (max-width:767px) {
+    .post-aside,
+    .post-aside-share {
+		margin-left: -230px;
+    }
+	.post-container,
+	.post-content,
+	.post-excerpt {
+		margin: 0;
+		border: 0;
+	}
+    #content,
+    #sidenav {
+   		float: none;
+		width: 100%;
+		margin: 0;
+    }
 }

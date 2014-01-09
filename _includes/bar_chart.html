@@ -1,0 +1,15 @@
+<script type="text/javascript">
+      function drawChart_{{ include.chart_name }}() {
+        var data = google.visualization.arrayToDataTable([ {% include {{include.chart_data}} %} ]);
+
+        var options = {
+          title: '{{ include.chart_title }}',
+          curveType: "function",
+          vAxis: { minValue: {{include.chart_min}}, maxValue: {{include.chart_max}} },
+          backgroundColor: { fill:'transparent' }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('{{ include.chart_name }}'));
+        chart.draw(data, options);
+      }
+</script>

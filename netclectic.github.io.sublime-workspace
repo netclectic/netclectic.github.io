@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hei",
+				"height"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"t",
+				"text-transform"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"li",
+				"list-style-type"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "{\n	\"shell_cmd\": \"jekyll build\"\n}\n",
+			"settings":
+			{
+				"buffer_size": 33,
+				"line_ending": "Windows",
+				"name": "untitled.sublime-build"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"TypeScript",
+				"Set Syntax: AppleScript"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/adria_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/source/netclectic.github.io/.gitignore",
+		"/D/source/netclectic.github.io/_includes/post_aside_tags.html",
+		"/D/source/netclectic.github.io/index.html",
+		"/D/source/netclectic.github.io/_layouts/post.html",
+		"/D/source/GoogleNexusWebsiteMenu/css/component.css",
+		"/D/source/GoogleNexusWebsiteMenu/index.html",
+		"/D/source/GoogleNexusWebsiteMenu/js/gnmenu.js",
+		"/D/source/GoogleNexusWebsiteMenu/css/demo.css",
+		"/D/source/netclectic.github.io/css/site.css",
+		"/D/source/netclectic.github.io/_posts/2012-01-26-who-are-you.md",
+		"/D/source/netclectic.github.io/_posts/2011-12-01-bealach-mor.md",
+		"/D/source/netclectic.github.io/_plugins/generate_categories.rb",
+		"/D/source/netclectic.github.io/_config.yml",
+		"/D/source/netclectic.github.io/_includes/paginator.html",
+		"/D/source/netclectic.github.io/_posts/2011-11-30-return-of-the-net.md",
+		"/D/source/netclectic.github.io/_plugins/generate_tags.rb",
+		"/D/source/netclectic.github.io/_layouts/tag_index.html",
+		"/D/source/netclectic.github.io/_site/tags/cyclography/index.html",
+		"/D/source/netclectic.github.io/about/index.html",
+		"/D/source/netclectic.github.io/_layouts/default.html",
+		"/D/source/netclectic.github.io/js/rss.js",
+		"/D/source/netclectic.github.io/_includes/site_categories.html",
+		"/D/source/netclectic.github.io/_layouts/category_index.html",
+		"/D/source/netclectic.github.io/_includes/site_rss_image_feed.html",
+		"/D/source/netclectic.github.io/js/jquery.popup.js",
+		"/D/source/netclectic.github.io/css/popup.css",
+		"/D/source/netclectic.github.io/_site/categories/blog/index.html",
+		"/D/source/netclectic.github.io/_posts/2011-12-01-bealach-mor",
+		"/D/source/netclectic.github.io/_posts/2011-12-05-the-grim-reaper.md",
+		"/D/source/netclectic.github.io/_includes/custom/category_feed.xml",
+		"/D/source/netclectic.github.io/_posts/2014-01-04-moved-to-jekyll-on-github-pages.md",
+		"/D/source/netclectic.github.io/categories/website/index.html",
+		"/D/source/netclectic.github.io/_site/index.html",
+		"/D/source/netclectic.github.io/_site/categories/website/index.html",
+		"/D/source/netclectic.github.io/projects/index.html",
+		"/D/source/netclectic.github.io/css/reset.css",
+		"/D/source/netclectic.github.io/_includes/site_recent_posts.html",
+		"/D/source/netclectic.github.io/_includes/site_features.html",
+		"/D/source/netclectic.github.io/_includes/site_actions.html",
+		"/D/source/netclectic.github.io/_includes/site_rss_feed.html",
+		"/D/source/netclectic.github.io/_includes/topnav.html",
+		"/D/source/jekyll-plugins/README.markdown",
+		"/D/source/netclectic.github.io/_includes/post_aside_tags.ext",
+		"/D/source/netclectic.github.io/_includes/social.ext",
+		"/D/source/andreasmcdermott.github.io/categories/index.html",
+		"/D/source/netclectic.github.io/_includes/paginator.ext",
+		"/D/source/netclectic.github.io/_site/website/2014/01/04/moved-to-jekyll-on-github-pages/index.html",
+		"/D/source/netclectic.github.io/css/pygments.css",
+		"/D/source/andreasmcdermott.github.io/css/site.css",
+		"/D/source/andreasmcdermott.github.io/_layouts/default.html",
+		"/D/source/netclectic.github.io/_includes/site_actions.ext",
+		"/D/source/netclectic.github.io/_includes/site_categories.ext",
+		"/D/source/netclectic.github.io/_includes/site_features.ext",
+		"/D/source/netclectic.github.io/_includes/topnav.ext",
+		"/D/source/andreasmcdermott.github.io/index.html",
+		"/D/source/config.yml",
+		"/C/Users/adria_000/Downloads/ez_setup.py",
+		"/D/source/netclectic.github.io/_layouts/game.html",
+		"/C/cmder/config/aliases",
+		"/D/MigrationArchitect/Tasks/New Task Library/New Task.py",
+		"/D/source/Migration Architect/MigrationArchitect/Resources/highlighting/IronPython.xshd",
+		"/D/source/Migration Architect/MigrationArchitect/Resources/highlighting/PowerShell.xshd",
+		"/D/MigrationArchitect/Tasks/New Task Library/Test Exception Logging.py",
+		"/D/MigrationArchitect/Tasks/New Task Library/New PS Task.ps1",
+		"/D/MigrationArchitect/Tasks/New Task Library/New PS Task",
+		"/C/Program Files/Sublime Text 3/Packages/scriptcs-sublime/README.md",
+		"/D/source/app.csx",
+		"/D/source/Migration Architect/MigrationArchitect/Resources/highlighting/csharp.xshd",
+		"/D/source/Migration Architect/MigrationArchitect/Resources/highlighting/csharp.xshd.xml",
+		"/C/Users/adria_000/Documents/MigrationArchitectWeb.txt"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"340",
+			"not",
+			"_closeMenu",
+			"closem",
+			"menuitems",
+			"scro",
+			"subsub",
+			"hover",
+			"subsub",
+			"wrapper",
+			"height",
+			"overflow",
+			"gn-menu ",
+			"submen",
+			"selected",
+			"parent",
+			"transition",
+			"subs",
+			"gn-menu",
+			"displ",
+			"top",
+			"overflow",
+			"subm",
+			"li ",
+			"width:",
+			"top",
+			"submenu",
+			"hover",
+			"gn-submenu",
+			"gn-subsubmenu",
+			"submenuitems",
+			"submenus",
+			"sub",
+			"hover",
+			"trigger",
+			"-webkit-transform",
+			"gn-open-part",
+			"gn-open-all",
+			"subm",
+			"gn-open-all",
+			"submenu",
+			"hover",
+			"-6",
+			"trigger",
+			"hover",
+			"categor",
+			"categories",
+			"category",
+			"Category",
+			"url",
+			"getTokenMap",
+			"item",
+			"smal",
+			"limit",
+			"content",
+			"categories",
+			"utf-",
+			"’",
+			"pre",
+			"sidena",
+			"side",
+			"content",
+			"clear",
+			"h1",
+			"content",
+			"disc",
+			"category_links",
+			".ext",
+			"a ",
+			"soc",
+			"andr",
+			"delim",
+			"markp",
+			"digit",
+			"\n    ",
+			"IronPython"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"tags",
+			"tag",
+			"Tag",
+			"PowerShell"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29,
+								29
+							]
+						],
+						"settings":
+						{
+							"default_dir": "C:\\Users\\adria_000\\AppData\\Roaming\\Sublime Text 3\\Packages\\User",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "netclectic.github.io.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 294.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
