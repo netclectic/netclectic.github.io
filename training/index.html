@@ -12,19 +12,19 @@ group: "navigation"
 
 <section class="dashboard pure-g-r clearfix">
 
-	<div class="pure-u-1-3 dashboard-piece dashboard-piece-redbg">
+	<div class="pure-u-1-3 dashboard-piece dashboard-piece-purplebg">
 	  <div class="dashboard-content">
 	    <div id="chart_hr" class="dashboard-metric"></div>
 	  </div>
 	</div>
 
-	<div class="pure-u-1-3 dashboard-piece dashboard-piece-orangebg">
+	<div class="pure-u-1-3 dashboard-piece dashboard-piece-redbg">
 	  <div class="dashboard-content">
 	    <div id="chart_weight" class="dashboard-metric"></div>
 	  </div>
 	</div>
 
-	<div class="pure-u-1-3 dashboard-piece dashboard-piece-greenbg">
+	<div class="pure-u-1-3 dashboard-piece dashboard-piece-orangebg">
 	  <div class="dashboard-content">
 	    <div id="chart_other" class="dashboard-metric"></div>
 	  </div>
@@ -36,15 +36,23 @@ group: "navigation"
 	  </div>
 	</div>
 
-	<div class="pure-u-1-2 dashboard-piece dashboard-piece-graybg">
+	<div class="pure-u-1-2 dashboard-piece dashboard-piece-greenbg">
 	  <div class="dashboard-content">
 	    <div id="chart_weight_2" class="dashboard-metric"></div>
 	  </div>
 	</div>
 
-	<div class="pure-u-1-1 dashboard-piece dashboard-piece-yellowbg">
+	<div class="pure-u-2-3 dashboard-piece dashboard-piece-yellowbg">
 	  <div class="dashboard-content">
 	    <div id="chart_other_2" class="dashboard-metric"></div>
+	  </div>
+	</div>
+
+	<div class="pure-u-1-3 dashboard-piece dashboard-piece-calendarbg">
+	  <div class="dashboard-content">
+	  <div id="chart_calendar" class="dashboard-metric">
+	  <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23e3e9ff&amp;src=netclectic.com_61t7rg65cgese8snoasr0emli8%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Europe%2FLondon" height="100%" width="100%" frameborder="0" scrolling="no"></iframe>
+	  </div>
 	  </div>
 	</div>
 
@@ -72,7 +80,7 @@ group: "navigation"
 		var menuHeight = 0;
 		var contentWidth =	$('#content').outerWidth();
 		if (contentWidth < 768) {
-			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height('auto');
+			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height('300');
 		}
 		else
 		{
@@ -82,7 +90,7 @@ group: "navigation"
 				headerHeight = $('#header').outerHeight();
 				menuHeight = $('#topnav').outerHeight();
 			}
-			var rowHeight = Math.floor((contentHeight-headerHeight-menuHeight-h3Height) / 3) -2;
+			var rowHeight = Math.floor((contentHeight-headerHeight-menuHeight-h3Height) / 3);
 			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height(rowHeight);
 		}
 	}
@@ -101,6 +109,10 @@ group: "navigation"
 
 	$('#full_screen_content').click(function() {
 		if (!isMax) {
+			var contentWidth =	$('#content').outerWidth();
+			if (contentWidth < 768) {
+				$("body").css('overflow', 'hidden');
+			}
 			$("#sidenav").css('display', 'none');
 			$("#content").css({
 	            'width': '100%',
@@ -117,6 +129,7 @@ group: "navigation"
 			$('#full_screen_content').attr('title', 'restore');
 		}
 		else {
+			$("body").css('overflow', '');
 			$("#content").css({'width':'','height':'','position':'','top':'','left':'','margin':'','border':'', 'bottom':'', 'right':''});
 			$("#sidenav").css('display', '');
 			$(".post-container").css({'border': ''});

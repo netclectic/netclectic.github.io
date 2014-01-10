@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"chart",
+				"chart_name"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
 				"hei",
 				"height"
 			],
@@ -26,10 +42,6 @@
 			[
 				"pa",
 				"padding-right"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"t",
@@ -56,10 +68,6 @@
 				"background-color"
 			],
 			[
-				"mar",
-				"margin-right"
-			],
-			[
 				"wi",
 				"width"
 			]
@@ -68,21 +76,48 @@
 	"buffers":
 	[
 		{
-			"contents": "{\n	\"shell_cmd\": \"jekyll build\"\n}\n",
+			"file": "training/index.html",
 			"settings":
 			{
-				"buffer_size": 33,
-				"line_ending": "Windows",
-				"name": "untitled.sublime-build"
+				"buffer_size": 3489,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/line_chart.html",
+			"settings":
+			{
+				"buffer_size": 600,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/bar_chart.html",
+			"settings":
+			{
+				"buffer_size": 599,
+				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/User/Jekyll.sublime-build",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 265.0,
 		"selected_items":
 		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: s",
+				"Package Control: Discover Packages"
+			],
 			[
 				"TypeScript",
 				"Set Syntax: AppleScript"
@@ -109,27 +144,43 @@
 	},
 	"file_history":
 	[
-		"/C/Users/adria_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/D/source/netclectic.github.io/.gitignore",
-		"/D/source/netclectic.github.io/_includes/post_aside_tags.html",
+		"/D/source/netclectic.github.io/_includes/chart_hr.data",
+		"/D/source/netclectic.github.io/_includes/chart_hr_2.data",
+		"/D/source/netclectic.github.io/css/site.css",
+		"/D/source/netclectic.github.io/css/dashboard.css",
+		"/D/source/netclectic.github.io/training/index.html",
 		"/D/source/netclectic.github.io/index.html",
+		"/D/source/netclectic.github.io/_layouts/default.html",
+		"/D/source/netclectic.github.io/_includes/training_chart_weight.html",
+		"/D/source/netclectic.github.io/_includes/paginator.html",
+		"/D/source/netclectic.github.io/_includes/chart_weight_2.data",
+		"/D/source/netclectic.github.io/_includes/chart_weight.data",
+		"/D/source/netclectic.github.io/_includes/chart_other.data",
+		"/D/source/netclectic.github.io/_includes/chart_other_2.data",
+		"/D/source/netclectic.github.io/_layouts/page.html",
+		"/D/source/netclectic.github.io/_layouts/chart.html",
+		"/D/source/netclectic.github.io/_includes/post_aside_tags.html",
 		"/D/source/netclectic.github.io/_layouts/post.html",
+		"/D/source/Pure-CSS-Demo-master/Pure-CSS-Demo-master/index.html",
+		"/D/source/Pure-CSS-Demo-master/Pure-CSS-Demo-master/css/main.css",
+		"/C/Users/adria_000/AppData/Roaming/Sublime Text 3/Packages/User/Jekyll.sublime-build",
+		"/C/Ruby193/bin/jekyll.bat",
+		"/C/Ruby193/bin/jekyll",
+		"/D/source/netclectic.github.io/.gitignore",
+		"/C/Users/adria_000/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/D/source/GoogleNexusWebsiteMenu/css/component.css",
 		"/D/source/GoogleNexusWebsiteMenu/index.html",
 		"/D/source/GoogleNexusWebsiteMenu/js/gnmenu.js",
 		"/D/source/GoogleNexusWebsiteMenu/css/demo.css",
-		"/D/source/netclectic.github.io/css/site.css",
 		"/D/source/netclectic.github.io/_posts/2012-01-26-who-are-you.md",
 		"/D/source/netclectic.github.io/_posts/2011-12-01-bealach-mor.md",
 		"/D/source/netclectic.github.io/_plugins/generate_categories.rb",
 		"/D/source/netclectic.github.io/_config.yml",
-		"/D/source/netclectic.github.io/_includes/paginator.html",
 		"/D/source/netclectic.github.io/_posts/2011-11-30-return-of-the-net.md",
 		"/D/source/netclectic.github.io/_plugins/generate_tags.rb",
 		"/D/source/netclectic.github.io/_layouts/tag_index.html",
 		"/D/source/netclectic.github.io/_site/tags/cyclography/index.html",
 		"/D/source/netclectic.github.io/about/index.html",
-		"/D/source/netclectic.github.io/_layouts/default.html",
 		"/D/source/netclectic.github.io/js/rss.js",
 		"/D/source/netclectic.github.io/_includes/site_categories.html",
 		"/D/source/netclectic.github.io/_layouts/category_index.html",
@@ -183,7 +234,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -197,6 +248,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hover",
+			"sidena",
+			"min-he",
+			"post-aside-share",
+			"sidenav",
+			"sidena",
+			"purp",
+			"sidena",
+			"content",
 			"340",
 			"not",
 			"_closeMenu",
@@ -299,30 +359,91 @@
 			[
 				{
 					"buffer": 0,
+					"file": "training/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 33,
+						"buffer_size": 3489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								183,
+								183
 							]
 						],
 						"settings":
 						{
-							"default_dir": "C:\\Users\\adria_000\\AppData\\Roaming\\Sublime Text 3\\Packages\\User",
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_includes/line_chart.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 600,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_includes/bar_chart.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jekyll/Syntaxes/HTML (Jekyll).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -334,7 +455,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -359,6 +480,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
