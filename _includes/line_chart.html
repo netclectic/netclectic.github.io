@@ -11,10 +11,17 @@
           title: '{{ include.chart_title }}',
           curveType: "function",
           vAxis: { minValue: {{include.chart_min}}, maxValue: {{include.chart_max}} },
-          backgroundColor: { fill:'transparent' }
+          backgroundColor: { fill:'transparent' },
+          legend: 'in',
+          trendlines: { 0: {
+              color: 'white',
+              labelInLegend: 'HR line',
+              visibleInLegend: true,
+              } 
+            } 
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('{{ include.chart_name }}'));
+        var chart = new google.visualization.ScatterChart(document.getElementById('{{ include.chart_name }}'));
         chart.draw(data, options);
       }
 </script>
