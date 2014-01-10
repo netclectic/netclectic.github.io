@@ -6,3 +6,4 @@ paginate: 10
 paginate_path: /page:num
 category_dir : /categories
 tag_dir : /tags
+exclude: [README.md, LICENSE, netclectic.github.io.sublime-project, netclectic.github.io.sublime-workspace]
