@@ -110,7 +110,7 @@ group: "navigation"
 	$('#full_screen_content').click(function() {
 		if (!isMax) {
 			var contentWidth =	$('#content').outerWidth();
-			if (contentWidth < 768) {
+			if (contentWidth > 768) {
 				$("body").css('overflow', 'hidden');
 			}
 			$("#sidenav").css('display', 'none');
