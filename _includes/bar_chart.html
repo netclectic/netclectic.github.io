@@ -11,7 +11,15 @@
           title: '{{ include.chart_title }}',
           curveType: "function",
           vAxis: { minValue: {{include.chart_min}}, maxValue: {{include.chart_max}} },
-          backgroundColor: { fill:'transparent' }
+          backgroundColor: { fill:'transparent' },
+          legend: 'in',
+          trendlines: { 0: {
+              color: 'white',
+              labelInLegend: 'Trend',
+              visibleInLegend: true,
+              } 
+            } 
+
         };
 
         var chart = new google.visualization.ColumnChart(document.getElementById('{{ include.chart_name }}'));

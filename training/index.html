@@ -63,7 +63,7 @@ group: "navigation"
 </script>
 
 {% include line_chart.html chart_name='chart_hr' chart_title='Resting Heart Rate over Time' chart_data='chart_hr.data' chart_min=40 chart_max=100 %}
-{% include line_chart.html chart_name='chart_weight' chart_title='Weight over Time' chart_data='chart_weight.data' chart_min=160 chart_max=200 %}
+{% include bar_chart.html chart_name='chart_weight' chart_title='Weight over Time' chart_data='chart_weight.data' chart_min=160 chart_max=200 %}
 {% include bar_chart.html chart_name='chart_other' chart_title='Other Stuff' chart_data='chart_other.data' chart_min=0 chart_max=200 %}
 {% include line_chart.html chart_name='chart_hr_2' chart_title='Max Heart Rate over Time' chart_data='chart_hr_2.data' chart_min=40 chart_max=100 %}
 {% include line_chart.html chart_name='chart_weight_2' chart_title='Max Power over Time' chart_data='chart_weight_2.data' chart_min=160 chart_max=200 %}
@@ -81,9 +81,18 @@ group: "navigation"
 		var contentWidth =	$('#content').outerWidth();
 		if (contentWidth < 768) {
 			$('.pure-g-r>[class ^="pure-u"] .dashboard-metric').height('300');
+			if (isMax) {
+				$("body").css('overflow', 'auto');
+			}
 		}
 		else
 		{
+			if (isMax) {
+				$("body").css('overflow', 'hidden');
+			}
+			else {
+				$("body").css('overflow', 'auto');
+			}
 			var contentHeight =	$('#content').outerHeight();
 			var h3Height = $('#content h3').outerHeight();
 			if (!isMax) {
@@ -110,9 +119,6 @@ group: "navigation"
 	$('#full_screen_content').click(function() {
 		if (!isMax) {
 			var contentWidth =	$('#content').outerWidth();
-			if (contentWidth > 768) {
-				$("body").css('overflow', 'hidden');
-			}
 			$("#sidenav").css('display', 'none');
 			$("#content").css({
 	            'width': '100%',
@@ -129,7 +135,6 @@ group: "navigation"
 			$('#full_screen_content').attr('title', 'restore');
 		}
 		else {
-			$("body").css('overflow', '');
 			$("#content").css({'width':'','height':'','position':'','top':'','left':'','margin':'','border':'', 'bottom':'', 'right':''});
 			$("#sidenav").css('display', '');
 			$(".post-container").css({'border': ''});
