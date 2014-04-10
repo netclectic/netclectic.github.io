@@ -1,5 +1,6 @@
 future: true
 lsi: true
+markdown: kramdown
 pygments: true
 permalink: pretty
 paginate: 10
