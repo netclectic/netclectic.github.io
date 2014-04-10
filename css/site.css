@@ -73,7 +73,7 @@ p, pre, ul {
 
 ul {
 	padding-left: 10px;
-  	list-style:circle inside;
+  	list-style:disc inside;
 }
 
 li {
